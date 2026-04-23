@@ -1,0 +1,35 @@
+# Django
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+db.sqlite3
+*.log
+
+# Environment — NEVER commit
+.env
+.env.local
+.env.production
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Static / media
+staticfiles/
+mediafiles/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Railway
+.railway/
