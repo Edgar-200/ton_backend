@@ -17,13 +17,16 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
 # ─────────────────────────────────────────────
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME', default='ton_db'),
-        'USER': config('DB_USER', default='ton_user'),
-        'PASSWORD': config('DB_PASSWORD', default='ton_pass'),
-        'HOST': config('DB_HOST', default='localhost'),
-        'PORT': config('DB_PORT', default='5432'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+
+# Dev Overrides — Dummy external services
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dummy-dev',
+    'API_KEY': 'dummy-dev-key',
+    'API_SECRET': 'dummy-dev-secret',
 }
 
 # ─────────────────────────────────────────────

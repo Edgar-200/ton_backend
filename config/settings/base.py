@@ -168,14 +168,14 @@ SIMPLE_JWT = {
 # ─────────────────────────────────────────────
 # AFRICA'S TALKING — SMS / OTP
 # ─────────────────────────────────────────────
-AT_USERNAME = config('AT_USERNAME')
-AT_API_KEY = config('AT_API_KEY')
+AT_USERNAME = config('AT_USERNAME', default='sandbox')
+AT_API_KEY = config('AT_API_KEY', default='dummy-at-key')
 AT_SENDER_ID = 'TON'
 
 # ─────────────────────────────────────────────
 # RESEND — Transactional Email
 # ─────────────────────────────────────────────
-RESEND_API_KEY = config('RESEND_API_KEY')
+RESEND_API_KEY = config('RESEND_API_KEY', default='dummy-resend-key')
 RESEND_FROM_EMAIL = config('RESEND_FROM_EMAIL', default='noreply@ton.co.tz')
 
 # ─────────────────────────────────────────────

@@ -111,7 +111,7 @@ class Migration(migrations.Migration):
             options={'db_table': 'nikoscore_events'},
         ),
         migrations.AddIndex(
-            model_name='nikoscorevent',
+            model_name='nikoscoreevent',
             index=models.Index(fields=['student', 'created_at'], name='nikoscore_events_student_date_idx'),
         ),
     ]

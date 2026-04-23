@@ -12,7 +12,7 @@
 
 **Step 2: [TODO] Edit config/settings/development.py** ✅ Completed
 
-**Step 3: [TODO] Test python manage.py runserver** ⏳ Pending (progress: SECRET_KEY + Cloudinary fixed, next DB)
+**Step 3: [TODO] Test python manage.py runserver** ✅ Success!
 
-**Step 4: [TODO] Setup DB / Create .env / Migrate** ✅ In progress (dev overrides added)
+**Step 4: [TODO] Fixed nikoscore migration typo, run `python manage.py makemigrations && python manage.py migrate`** ✅ Pending
 
